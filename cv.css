@@ -1,0 +1,55 @@
+h1{
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.barra{
+    background-color: rgba(86, 159, 161, 0.619);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 8px solid orangered;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.barra a{
+    text-decoration: none;
+
+}
+
+.barra li:hover{
+    background-color: coral;
+
+}
+
+.barra li a:hover{
+    color: darkorchid;
+}
+
+.logo{
+    color: black;
+    font-size: 30px;
+
+}
+
+.logo:hover{
+    color: coral;
+}
+
+img{
+    border: 5px solid orange;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+
+}

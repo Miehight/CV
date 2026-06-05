@@ -1,0 +1,191 @@
+/* --- Reset e Impostazioni Generali --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px; /* Spazio per non far coprire i contenuti dalla barra fissa */
+}
+
+/* --- Barra di Navigazione --- */
+.barra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.barra .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.barra .menu {
+    display: flex;
+    list-style: none;
+}
+
+.barra .menu li {
+    margin-left: 20px;
+}
+
+.barra .menu a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.barra .menu a:hover {
+    color: #fff;
+}
+
+/* --- Sezione Home (Profilo) --- */
+#home {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #27ae60; /* Un tocco di verde per il tema "giardiniere" */
+}
+
+#home h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+#home h2 {
+    font-size: 20px;
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-style: italic;
+    color: #666;
+}
+
+/* --- Stile Comune per le Sezioni (Esperienze, Formazione, Contatti) --- */
+#Contatti, #Esperienze, #Formazione {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Titoli delle sezioni principale */
+h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sotto-blocchi di esperienze e formazione */
+#Esperienze > div, #Formazione > div {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+#Esperienze > div:last-child, #Formazione > div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Titoli dei ruoli o scuole */
+h4 {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+/* Date e Luoghi */
+#Esperienze p strong, #Formazione p strong {
+    color: #555;
+}
+
+/* Liste puntate dei dettagli */
+ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #555;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* --- Sezione Contatti Specifica --- */
+#Contatti p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#Contatti a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+#Contatti a:hover {
+    text-decoration: underline;
+    color: #219653;
+}
+
+/* --- Ottimizzazione per Mobile --- */
+@media (max-width: 600px) {
+    .barra {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .barra .menu {
+        margin-top: 10px;
+    }
+    
+    .barra .menu li {
+        margin: 0 10px;
+    }
+    
+    body {
+        padding-top: 110px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
